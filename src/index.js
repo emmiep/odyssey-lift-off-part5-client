@@ -4,7 +4,7 @@ import GlobalStyles from './styles';
 import Pages from './pages';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
-const serverUri = process.env.SERVER_URI ?? 'http://localhost:4000';
+const serverUri = process.env.REACT_APP_SERVER_URI ?? 'http://localhost:4000';
 
 const client = new ApolloClient({
   uri: serverUri,
